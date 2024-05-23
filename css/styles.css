@@ -1,0 +1,366 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #1D1D1D;
+}
+
+/* Tipografias y estilos */
+
+h1,h2{
+    font-family: "Teko", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal; 
+    color: #EAEAEA;
+}
+h1 strong{
+    color: #EE008F;
+}
+h2{    
+    font-size: 70px;
+    text-align: center;
+}
+h3,p,ul li{
+    font-family: "Urbanist", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: #EAEAEA;
+}
+h3, p{
+    font-size: 20px;
+}
+ul li{
+    font-size: 15px;
+}
+
+.colorprimario{
+    color: #EAEAEA;
+}
+.colorsecundario{
+    color: #EE008F;
+}
+
+.tipografiaEspecial{
+    font-family: "Teko", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 40px;   
+}
+
+.tipografiaSecundaria{
+    font-family: "Urbanist", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 20px;
+   
+}
+
+.tipografiaformulario{
+    font-family: "Urbanist", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    
+}
+ul{
+    list-style-type: none;
+}
+.alineacionTextoContacto{
+    text-align: center;
+}
+
+li a{
+    color: #EAEAEA;
+    text-decoration: none;
+}
+h1 a{
+    text-decoration: none;
+    color: #EAEAEA;
+}
+
+/* Tamaños de cajas + Flex */
+
+.button{
+    padding: 10px 80px 10px 80px;
+    color: #EAEAEA;
+    background-color: #EE008F;    
+    border-radius: 10px;
+    width: 20vw;
+}
+
+.buttonCard{
+    width: 100px;
+    height: 50px;
+    padding: 10px;
+    background-color: #1d1d1d00;
+    color: #EAEAEA;
+    border-color: #EAEAEA;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.buttonCardTwo{
+    width: 300px;
+    height: 50px;
+    padding: 10px;
+    background-color: #EE008F;
+    color: #EAEAEA;
+    border-color: #EE008F;   
+    border-radius: 10px;
+    margin-bottom: 40px;
+
+}
+
+.positionabsolut{
+    position: absolute;
+    top: 0px;
+}
+
+header{
+    position: relative;
+}
+.navPrincipal{
+    height: 88px;
+    background-color: rgba(0, 0, 0, 0.204);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+h1{
+    margin-left: 156px;
+    position: relative;
+    z-index: 2;   
+}
+h2{
+    position: relative;
+    z-index: 2;
+}
+li{
+    margin: 5px;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    margin-right: 146px;
+    position: relative;
+    z-index: 2;
+}
+.flexNav{
+    display: flex;
+    flex-direction: row;
+}
+.tamañoDiv{
+    width: 98vw;
+    height: 50vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+}
+.margenes146{
+    margin-left: 136px;
+    margin-right: 136px;
+}
+.flexCard{
+    display: flex;
+    flex-direction: row;
+}
+
+.divNuestroShow{
+    width: 481px;
+    height: 700px;
+    border-radius: 15px;  
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;   
+}
+.imgCardUno{
+    background-image: url("../assets/card_01.jpg");
+    background-position: center bottom;
+}
+.imgCardDos{
+    background-image: url("../assets/card_02.jpg");
+    background-position: center bottom;
+}
+.imgCardTres{
+    background-image: url("../assets/card_03.jpg");
+    background-position: center bottom;
+}
+
+.tamañoSeccionNS{
+    width: 98vw;
+    height: 70vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+.tamañoParrafo{
+    width: 386px;
+    height: 436px;
+}
+
+.sectionNuestroShow{
+    width: 481px;
+    height: 700px;
+    margin: 156px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;     
+}
+
+.seccionEspecial{
+    width: 98vw;
+    height: 30vw;   
+    margin-bottom: 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.cajaTexto{
+    width: 815px;
+    height: 728px;
+    padding: 92px 134px 92px 77px;
+}
+
+.bordeCard{
+    border-radius: 20px;
+    border: 1.5px solid #EAEAEA;
+}
+
+.flexCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.cajaCard{
+    width: 944px;
+    height: 380px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.flexCards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.divBaterista{
+    width: 800px;
+    height: 728px;
+    padding: 96px 71px 96px 156px;
+}
+.divImagenBaterista{
+    width: 636px;
+    height: 728px;
+    padding-right: 151px;
+}
+.tamañoCard{
+    width: 1128px;
+    height: 968px;
+}
+.bordeImagenes{
+    border-radius: 12px;
+}
+.bordeImagenesCards{
+    border-radius: 22px;
+}
+.imagenSecciones{
+    width: 100vw;
+    
+}
+.tamañoseccion{
+    width: 98,9vw;
+    height: 30vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Grids */
+
+.gridBio{
+    display: grid;
+    grid-template-columns: 1fr 4fr 4fr 1fr;
+    grid-template-rows: 1fr 5fr 1fr 5fr 1fr 5fr 1fr;
+    grid-template-areas: 
+    ". . . ."
+    ". imgVozPrincipal textVozPrincipal ."
+    ". . . ."
+    ". textBaterista imgBaterista ."
+    ". . . ."
+    ". imgBajista textBajista ."
+
+    ;
+}
+
+.imgBaterista{
+    grid-area: imgBaterista;
+}
+.textBaterista{
+    grid-area: textBaterista;
+}
+.imgBajista{
+    grid-area: imgBajista;
+}
+.textBajista{
+    grid-area: textBajista;
+}
+.textVozPrincipal{
+    grid-area: textVozPrincipal;    
+}
+.imgVozPrincipal{ 
+    grid-area: imgVozPrincipal;    
+}
+.textoGrid{
+    align-self: center;
+}
+.imgGrid{
+    justify-self: end;
+}
+
+.gridEventos{
+    display: grid;
+    grid-template-columns: 2fr 10fr 1fr;
+    grid-template-rows: 122px 968px 122px 968px 122px 968px 122px;
+    grid-template-areas: 
+    ". . ."
+    ". cardUno ."
+    ". . ."
+    ". cardDos ."
+    ". . ."
+    ". cardTres ."
+    ". . ."   
+    ;  
+
+}
+.cardUno{
+    grid-area: cardUno;
+}
+.cardDos{
+    grid-area: cardDos;
+}
+.cardTres{
+    grid-area: cardTres;
+}
+.textoFinal{
+    grid-area: textoFinal;
+}
