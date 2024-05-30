@@ -7,6 +7,10 @@ body{
     background-color: #1D1D1D;
 }
 
+html{
+    font-size: 62.5%;
+}
+
 /* Tipografias y estilos */
 
 h1,h2{
@@ -17,10 +21,15 @@ h1,h2{
     color: #EAEAEA;
 }
 h1 strong{
+    
     color: #EE008F;
 }
+h1{
+    font-size: 3rem;
+    
+}
 h2{    
-    font-size: 70px;
+    font-size: 7rem;
     text-align: center;
 }
 h3,p,ul li{
@@ -31,10 +40,10 @@ h3,p,ul li{
     color: #EAEAEA;
 }
 h3, p{
-    font-size: 20px;
+    font-size: 2rem;
 }
 ul li{
-    font-size: 15px;
+    font-size: 1.5rem;
 }
 
 .colorprimario{
@@ -43,13 +52,18 @@ ul li{
 .colorsecundario{
     color: #EE008F;
 }
+.colorToggler{
+    background-color: #eaeaea8e!important;
+  
+   
+}
 
 .tipografiaEspecial{
     font-family: "Teko", sans-serif;
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
-    font-size: 40px;   
+    font-size: 4rem;   
 }
 
 .tipografiaSecundaria{
@@ -57,7 +71,7 @@ ul li{
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
-    font-size: 20px;
+    font-size: 2rem;
    
 }
 
@@ -66,6 +80,8 @@ ul li{
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
+    padding-left: 10px;
+    font-size: 1.5rem;
     
 }
 ul{
@@ -83,37 +99,70 @@ h1 a{
     text-decoration: none;
     color: #EAEAEA;
 }
+ion-icon{
+    color: #EAEAEA;
+    text-align: center;
+    font-size: 2.4rem;
+    margin: 3rem 2rem 3rem 2rem;
+}
+
 
 /* Tamaños de cajas + Flex */
 
-.button{
-    padding: 10px 80px 10px 80px;
+.nombre{
+    border-radius: 1rem;
+    background-color: #1d1d1d8a;
+    border-color: #111111;
+    width: 46.8rem;
+    height: 4.8rem;    
+}
+
+.mensaje{
+    border-radius: 1rem;
+    background-color: #1d1d1d8a;
+    border-color: #111111;
+    width: 107.5rem;
+    height: 12.4rem;    
+}
+
+.buttonForm{
     color: #EAEAEA;
     background-color: #EE008F;    
-    border-radius: 10px;
+    border-radius: 1rem;
+    width: 109rem;
+    height: 4.8rem;
+
+}
+
+.button{
+    padding: 1rem 8rem 1rem 8rem;
+    color: #EAEAEA;
+    background-color: #EE008F;    
+    border-radius: 1rem;
     width: 20vw;
+    
 }
 
 .buttonCard{
-    width: 100px;
-    height: 50px;
-    padding: 10px;
+    width: 10rem;
+    height: 5rem;
+    padding: 1rem;
     background-color: #1d1d1d00;
     color: #EAEAEA;
     border-color: #EAEAEA;
-    border-radius: 10px;
-    margin-bottom: 40px;
+    border-radius: 1rem;
+    margin-bottom: 4rem;
 }
 
 .buttonCardTwo{
-    width: 300px;
-    height: 50px;
-    padding: 10px;
+    width: 30rem;
+    height: 5rem;
+    padding: 1rem;
     background-color: #EE008F;
     color: #EAEAEA;
     border-color: #EE008F;   
-    border-radius: 10px;
-    margin-bottom: 40px;
+    border-radius: 1rem;
+    margin-bottom: 4rem;
 
 }
 
@@ -125,18 +174,22 @@ h1 a{
 header{
     position: relative;
 }
-.navPrincipal{
-    height: 88px;
+.navBootstrap{
+    width: 99vw;
+    height: 8.8rem;
     background-color: rgba(0, 0, 0, 0.204);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    z-index: 2;
+
 }
+.marginEspecial{
+    
+    margin-left: 18rem!important;
+}
+.marginLi{
+    margin-left: 6rem;
+}
+
 h1{
-    margin-left: 156px;
+    margin-left: 15.6rem;
     position: relative;
     z-index: 2;   
 }
@@ -145,32 +198,33 @@ h2{
     z-index: 2;
 }
 li{
-    margin: 5px;
+    margin: 0.5rem;
 }
 nav{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: end;
-    margin-right: 146px;
+    margin-right: 14.6rem;
     position: relative;
     z-index: 2;
 }
 .flexNav{
     display: flex;
     flex-direction: row;
+    justify-content: end;
 }
 .tamañoDiv{
     width: 98vw;
-    height: 50vw;
+    height: 100vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: flex-end;
 }
 .margenes146{
-    margin-left: 136px;
-    margin-right: 136px;
+    margin-left: 13.6rem;
+    margin-right: 13.6rem;
 }
 .flexCard{
     display: flex;
@@ -178,9 +232,9 @@ nav{
 }
 
 .divNuestroShow{
-    width: 481px;
-    height: 700px;
-    border-radius: 15px;  
+    width: 48.1rem;
+    height: 70rem;
+    border-radius: 1.5rem;  
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -208,15 +262,15 @@ nav{
 
 }
 .tamañoParrafo{
-    width: 386px;
-    height: 436px;
+    width: 38.6rem;
+    height: 43.6rem;
 }
 
 .sectionNuestroShow{
-    width: 481px;
-    height: 700px;
-    margin: 156px;
-    padding: 50px;
+    width: 48.1rem;
+    height: 70rem;
+    margin: 15.6rem;
+    padding: 5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;     
@@ -234,13 +288,13 @@ nav{
 }
 
 .cajaTexto{
-    width: 815px;
-    height: 728px;
-    padding: 92px 134px 92px 77px;
+    width: 81.5rem;
+    height: 72.8rem;
+    padding: 9.2rem 13.4rem 9.2rem 7.7rem;
 }
 
 .bordeCard{
-    border-radius: 20px;
+    border-radius: 2rem;
     border: 1.5px solid #EAEAEA;
 }
 
@@ -250,10 +304,10 @@ nav{
     justify-content: space-evenly;
 }
 .cajaCard{
-    width: 944px;
-    height: 380px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    width: 94.4rem;
+    height: 38rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 .flexCards{
     display: flex;
@@ -261,29 +315,35 @@ nav{
     align-items: center;
 }
 
+.flexFooter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
 
 .divBaterista{
-    width: 800px;
-    height: 728px;
-    padding: 96px 71px 96px 156px;
+    width: 80rem;
+    height: 72.8rem;
+    padding: 9.6rem 7.1rem 9.6rem 15.6rem;
 }
 .divImagenBaterista{
-    width: 636px;
-    height: 728px;
-    padding-right: 151px;
+    width: 63.6rem;
+    height: 72.8rem;
+    padding-right: 15.1rem;
 }
 .tamañoCard{
-    width: 1128px;
-    height: 968px;
+    width: 112.8rem;
+    height: 96.8rem;
 }
 .bordeImagenes{
-    border-radius: 12px;
+    border-radius: 1.2rem;
 }
 .bordeImagenesCards{
-    border-radius: 22px;
+    border-radius: 2.2rem;
 }
 .imagenSecciones{
-    width: 100vw;
+    width: 98.8vw;
     
 }
 .tamañoseccion{
@@ -294,7 +354,24 @@ nav{
     justify-content: center;
     align-items: center;
 }
+.seccionGaleria{
+       
+    margin-left: 13.6rem;
+    margin-top: 7rem;
+    margin-bottom: 20rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 
+.imgGaleria{
+    width: 90rem;
+    height: 60rem;
+}
+
+.cajaTitulos{
+    margin-right: 5rem;
+}
 /* Grids */
 
 .gridBio{
@@ -339,7 +416,7 @@ nav{
 
 .gridEventos{
     display: grid;
-    grid-template-columns: 2fr 10fr 1fr;
+    grid-template-columns: 2fr 10fr 2fr;
     grid-template-rows: 122px 968px 122px 968px 122px 968px 122px;
     grid-template-areas: 
     ". . ."
@@ -364,3 +441,178 @@ nav{
 .textoFinal{
     grid-area: textoFinal;
 }
+.gridInfo{
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+    grid-template-rows: 2fr 1fr 1fr 4fr 3fr;
+    grid-template-areas: 
+    ". . ."
+    ". titulo ."
+    ". . ."
+    ". textito ."
+    ". . ."
+
+    ;
+}
+.titulo{
+    grid-area: titulo;
+}
+.textito{
+    grid-area: textito;
+}
+.gridFormulario{
+    display: grid;
+    grid-template-columns: 2fr 5fr 5fr 2fr;
+    grid-template-rows: 2fr 7fr 3fr 7fr;
+    grid-template-areas: 
+    ". gridNombre gridEmail ."
+    ". gridMensaje gridMensaje ."
+    ". gridButton gridButton ."
+    ". . . ."
+    ;
+}
+.gridNombre{
+    grid-area: gridNombre;
+}
+.gridEmail{
+    grid-area: gridEmail;
+    
+    justify-self: end;
+}
+.gridMensaje{
+    grid-area: gridMensaje;
+    align-self: end;
+}
+.gridButton{
+    grid-area: gridButton;
+    align-self: end;
+}
+
+/* media queris index */
+
+@media (max-width: 768px) {
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 3rem;
+    }
+    h3, p{
+        font-size: 1rem;
+    }
+    ul li{
+        font-size: 1rem;
+    }
+    .tipografiaEspecial{
+        font-size: 2rem;
+    }
+    .margenes146{
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .marginEspecial{
+        margin-left: 2rem!important;
+    }
+    .tamañoDiv{
+        height: 18vh;
+        margin-bottom: 15rem;
+        margin-top: 20rem;
+        width: 95vw;
+    }
+   
+    .imagenSecciones{
+        width: 100vw;
+        
+    }
+    .tamañoSeccionNS{
+        flex-direction: column;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        width: 95vw;
+        height: 70rem;
+        
+    }
+    .imgQueris{
+        width: 30rem;
+        height: 40rem;
+        margin-bottom: 3rem;
+    }
+    .sectionNuestroShow{
+        width: 95vw;
+        height: 2rem;
+        margin: 3rem;
+        justify-content: flex-end;
+    }
+    .seccionEspecial{
+        width: 95vw;
+        height: 5rem;
+        margin-top: 1rem;
+        margin-bottom: 3rem; 
+        margin-left: 2rem; 
+        margin-right: 2rem;      
+        justify-content: flex-end;
+    }
+    .tamañoParrafo{
+        width: 80vw;
+        height: 4rem;
+    }
+    .flexNav{
+        flex-direction: column;
+        align-items: center;
+    }
+    .tamañoLinea{
+        width: 80vw;
+    }
+    .button{
+        padding: 1rem 2rem 1rem 2rem;          
+        border-radius: 1rem;
+        width: 20vw;
+        height: 4rem;
+        
+    }
+    .tipografiaSecundaria{
+        font-size: 1rem;
+    }
+    ion-icon{
+     
+        font-size: 2rem;
+        margin: 2rem 1rem 2rem 1rem;
+    }
+   
+}
+
+/* media queris bio */
+
+@media (max-width: 768px) {
+    .navBootstrap{
+        width: 100vw;
+        height: 4rem;       
+    
+    }
+    .imagenSecciones{
+        width: 100vw;
+    }
+    .gridBio{
+        
+        grid-template-columns: 1fr 4fr 1fr;
+        grid-template-rows: 0fr 0.5fr 1fr 0fr 0.5fr 1fr 0fr 0.5fr 1fr 0.2fr;
+        grid-template-areas: 
+        ". . ."
+        ". textVozPrincipal ."
+        ". imgVozPrincipal ."
+        ". . ."
+        ". textBaterista ."
+        ".  imgBaterista ."
+        ". . ."
+        ". textBajista ."
+        ". imgBajista ."
+        ". . ."    
+        ;    
+    }
+    .tamañoseccion{
+        width: 100vw;
+        height: 30vh;
+    }
+
+}
+
