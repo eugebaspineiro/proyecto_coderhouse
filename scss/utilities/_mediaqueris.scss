@@ -1,0 +1,307 @@
+@mixin flexOne($displai,$direction,$justify,$align){
+    display: $displai;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+@mixin anchoAlto($ancho,$alto){
+    width: $ancho;
+    height: $alto;
+}
+@mixin botonesForm($radio, $background, $bordeColor){
+    border-radius: $radio;
+    background-color: $background;
+    border-color: $bordeColor;
+}
+
+
+/* media queris generales */
+
+@media (max-width: 412px){
+    .marginEspecial{    
+        margin-left: 2rem!important;
+    }
+    
+    .marginLi{
+        margin-left: 2rem;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    h1 strong{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 3rem;
+    }
+    h3, p{
+        font-size: 1rem;
+    }
+    ul li{
+        font-size: 1rem;
+    }
+    .tipografiaEspecial{
+        font-size: 2rem;
+    }
+
+    .navBootstrap{   
+        height: 4rem;   
+    }
+    ion-icon{     
+        font-size: 2rem;
+        margin: 0rem 1rem 0rem 1rem;
+    }
+    .tamañoLinea{
+        width: 80vw;
+    }
+    .button{
+        padding: 1rem 2rem 1rem 2rem;          
+        border-radius: 1rem;
+        width: 20vw;
+        height: 4rem;        
+    }
+    .tipografiaSecundaria{
+        font-size: 1rem;
+    }
+    .footerQueris{
+        @include anchoAlto(100%,10vh )
+    }
+    .tamañoCover{
+        width: 100%;
+        height: 30vh;    
+    }
+    
+    .marginCover{
+        margin: 15rem 2rem 0rem 2rem;
+    }
+  
+
+}
+
+/* media queris index */
+
+@media (max-width: 412px){
+    .tamañoSubNav{
+        width: 100%;
+        height: 32vh;
+    }
+    .espacioLetras{
+        letter-spacing: 0.1rem;
+    }    
+    .marginTitular{
+        margin-top: 19rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .tamañoSeccionNS{
+        margin-top: 40vh;
+        height: 60vh;
+        @include flexOne(flex,column, center , center );
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .sectionNuestroShow{
+        width: 100%;
+        height: 70vh;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        @include flexOne(flex, column, center , center);     
+    
+    }
+    .flexCarrusel{
+        @include flexOne(flex, column, center, center);
+    }
+    
+    .tamañoParrafo{
+        @include anchoAlto(80vw, 3rem);   
+    }
+    
+    .bordeImagenes{
+        border-radius: 0.8rem;
+    }
+    
+    .tamañoCarrusel{
+        @include anchoAlto(70vw, 50vh);
+        margin-top: 10rem;
+        margin-right: 2rem;
+    }
+    .imgQueris{
+        @include anchoAlto(70vw, 50vh);
+        margin-left:1.2rem;
+    }
+    .alineacionQueris{
+        text-align: center;
+    }
+    .seccionEspecial{
+        @include flexOne(flex, column, center, center);
+        @include anchoAlto(90vw, 50vh);
+        margin: 5rem 2rem 1rem 2rem;
+    }    
+    .textoSE{
+        text-align: center;
+        margin: 1rem 2rem 1rem 2rem;
+    }
+}
+
+/* media queris bio */
+
+@media (max-width: 412px){
+    .gridBio{
+        
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-rows: 0.65fr 0.8fr 1.2fr 0.2fr 0.8fr 1.2fr 0.2fr 0.8fr 1.2fr 0.2fr;
+        grid-template-areas: 
+        ". . ."
+        ". textVozPrincipal ."
+        ". imgVozPrincipal ."
+        ". . ."
+        ". textBaterista ."
+        ".  imgBaterista ."
+        ". . ."
+        ". textBajista ."
+        ". imgBajista ."
+        ". . ."    
+        ;    
+    }  
+   
+}
+
+/* media queris eventos */
+
+@media (max-width: 412px){
+    .tamañoCard{
+        @include anchoAlto(90vw, 52vh);
+        border-radius: 1rem;           
+    }
+    .cajaCard{
+        @include anchoAlto(80vw, 10vh);    
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+    .bordeImagenesCards{
+        border-radius: 1rem;
+    }
+    .gridEventos{
+        display: grid;
+        grid-template-columns: 2rem 90vw 2rem;
+        grid-template-rows: 30vh 60vh 1vh 60vh 1vh 60vh 1vh;
+        grid-template-areas: 
+        ". . ."
+        ". cardUno ."
+        ". . ."
+        ". cardDos ."
+        ". . ."
+        ". cardTres ."
+        ". . ."   
+        ;  
+    
+    }
+    .imgQuerisCard{
+        @include anchoAlto(89vw, 25vh )
+    }
+    .buttonCardTwo{
+        width: 15rem;
+        height: 3rem;
+        padding: 0.5rem;      
+        border-radius: 0.5rem;    
+    
+    }
+    .gridInfoEventos{
+        display: grid;
+        grid-template-columns: 2rem 90vw 2rem;
+        grid-template-rows: 1vh 2vh 2vh 15vh 5vh;
+        grid-template-areas: 
+        ". . ."
+        ". titulo ."
+        ". . ."
+        ". textito ."
+        ". . ."
+    
+        ;
+    }
+}
+
+/* media queris galeria */
+
+@media (max-width: 412px){
+    .marginMain{
+        margin-top: 30vh;
+    }
+    
+    .seccionGaleria{
+        @include flexOne(flex, column, center, center);
+        margin-bottom: 5vh;
+    }
+    
+    .imgCarruselGaleria{
+        @include anchoAlto(80vw, 30vh);
+    }
+    
+    .cajaTitulos{
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .querisAlign{
+        text-align: center;
+    }
+}
+
+/* media queris contacto*/
+
+@media (max-width: 412px){
+    .gridInfo{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 1rem 80vw 2rem;
+        grid-template-rows: 30vh 3vh 2vh 20vh 3vh;
+        grid-template-areas: 
+        ". . ."
+        ". titulo ."
+        ". . ."
+        ". textito ."
+        ". . ."
+    
+        ;
+    }
+ 
+    .gridFormulario{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 2rem 80vw 2rem;
+        grid-template-rows: 5vh 5vh 1vh 5vh 1vh 18vh 1vh 5vh 4vh;
+        grid-template-areas: 
+        ". . ."
+        ". gridNombre ."
+        ". . ."
+        ". gridEmail ."
+        ". . ."
+        ". gridMensaje ."
+        ". . ."
+        ". gridButton ."
+        ". . ."
+        ;
+    }
+    
+    .nombre{      
+        @include anchoAlto(80vw, 5vh);
+    }
+    
+    .mensaje{      
+        @include anchoAlto(80vw, 15vh);
+    }
+    
+    .buttonForm{   
+        @include anchoAlto(80vw, 5vh)
+    }
+    
+
+}
+
+
+
+
+
+
+
+
+

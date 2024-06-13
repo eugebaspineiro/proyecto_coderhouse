@@ -1,0 +1,81 @@
+@mixin anchoAlto($ancho,$alto){
+    width: $ancho;
+    height: $alto;
+}
+
+@mixin botonesForm($radio, $background, $bordeColor){
+    border-radius: $radio;
+    background-color: $background;
+    border-color: $bordeColor;
+}
+
+/* main */
+
+.gridInfo{
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+    grid-template-rows: 90vh 1fr 1fr 4fr 3fr;
+    grid-template-areas: 
+    ". . ."
+    ". titulo ."
+    ". . ."
+    ". textito ."
+    ". . ."
+
+    ;
+}
+.titulo{
+    grid-area: titulo;
+}
+.textito{
+    grid-area: textito;
+}
+.gridFormulario{
+    display: grid;
+    grid-template-columns: 2fr 5fr 5fr 2fr;
+    grid-template-rows: 2fr 7fr 3fr 7fr;
+    grid-template-areas: 
+    ". gridNombre gridEmail ."
+    ". gridMensaje gridMensaje ."
+    ". gridButton gridButton ."
+    ". . . ."
+    ;
+}
+.gridNombre{
+    grid-area: gridNombre;
+}
+.gridEmail{
+    grid-area: gridEmail;
+    
+    justify-self: end;
+}
+.gridMensaje{
+    grid-area: gridMensaje;
+    align-self: end;
+}
+.gridButton{
+    grid-area: gridButton;
+    align-self: end;
+}
+
+.alineacionTextoContacto{
+    text-align: center;
+}
+
+.nombre{
+    @include botonesForm(1rem, #1d1d1d8a, #111111);
+    @include anchoAlto(46rem, 5rem);
+}
+
+.mensaje{
+    @include botonesForm(1rem, #1d1d1d8a, #111111);
+    @include anchoAlto(109rem, 12rem);
+}
+
+.buttonForm{
+    color: nth($paletaColores, 1 );
+    background-color: nth($paletaColores, 2 );
+    border-radius: 1rem;
+    @include anchoAlto(109rem, 5rem)
+}
+

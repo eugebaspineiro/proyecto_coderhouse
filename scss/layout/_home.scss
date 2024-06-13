@@ -1,0 +1,84 @@
+
+@mixin flexOne($displai,$direction,$justify,$align){
+    display: $displai;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+@mixin anchoAlto($ancho,$alto){
+    width: $ancho;
+    height: $alto;
+}
+
+/* cover nav home */
+
+.tamañoSubNav{
+    width: 100%;
+    height: 120vh;
+}
+.backImg{
+    background-image: url("../assets/cover_principal.png");
+    background-size: cover;
+    background-position: top center;
+}
+
+.espacioLetras{
+    letter-spacing: 0.3rem;
+}
+
+.marginTitular{
+    margin-top: 65rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+
+/*main*/
+
+
+.tamañoSeccionNS{
+    margin-top: 140vh;
+    height: 90vh;
+    @include flexOne(flex,row , center , center );
+}
+
+.sectionNuestroShow{
+    width: 50vw;
+    height: 90 vh;
+    margin-left: 10rem;
+    @include flexOne(flex, column, center , flex-start );
+
+}
+
+.flexCarrusel{
+    @include flexOne(flex, colum, flex-end, end);
+}
+
+.tamañoParrafo{
+    @include anchoAlto(40vw, 50rem)
+}
+
+.bordeImagenes{
+    border-radius: 1.2rem;
+}
+
+.tamañoCarrusel{
+    @include anchoAlto(50vw, 90vh);
+    margin-right: 10rem;
+}
+
+.seccionEspecial{
+    @include flexOne(flex, column, space-evenly, center);
+    @include anchoAlto(100%, 80vh);
+    margin-top: 15vh;
+    margin-bottom: 15vh;
+}
+
+.textoSE{
+    text-align: center;
+    margin: 5rem 10rem 5rem 10rem;
+}
+
+
+
+

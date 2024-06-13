@@ -1,0 +1,41 @@
+/* main */
+
+.gridBio{
+    display: grid;
+    grid-template-columns: 1fr 4fr 4fr 1fr;
+    grid-template-rows: 5fr 5fr 1fr 5fr 1fr 5fr 2fr;
+    grid-template-areas: 
+    ". . . ."
+    ". imgVozPrincipal textVozPrincipal ."
+    ". . . ."
+    ". textBaterista imgBaterista ."
+    ". . . ."
+    ". imgBajista textBajista ."
+
+    ;
+}
+
+.imgBaterista{
+    grid-area: imgBaterista;
+}
+.textBaterista{
+    grid-area: textBaterista;
+}
+.imgBajista{
+    grid-area: imgBajista;
+}
+.textBajista{
+    grid-area: textBajista;
+}
+.textVozPrincipal{
+    grid-area: textVozPrincipal;    
+}
+.imgVozPrincipal{ 
+    grid-area: imgVozPrincipal;    
+}
+.textoGrid{
+    align-self: center;
+}
+.imgGrid{
+    justify-self: end;
+}

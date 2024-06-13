@@ -1,0 +1,219 @@
+html{
+    font-size: 62.5%;
+}
+
+%fuentePrincipal{
+    font-family: $fuentePrincipal, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal; 
+    color: nth($paletaColores,1);
+
+}
+
+%fuenteSecundaria{
+    font-family: "Urbanist", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: nth($paletaColores, 1 );
+}
+
+/*tipografias*/
+
+.tipografiaEspecial{
+    @extend %fuentePrincipal;
+    font-size: 4rem;
+    color: nth($paletaColores , 1 );
+}
+
+h3, p{
+    @extend %fuenteSecundaria;
+    font-size: 2rem;
+    color: nth($paletaColores, 1 );
+}
+
+.tipografiaSecundaria{
+    @extend %fuenteSecundaria;
+    font-size: 2rem;
+}
+
+h1{
+    @extend %fuentePrincipal;
+    font-size: 3rem;
+
+}
+
+h1 strong{
+    color: nth($paletaColores, 2 );
+    font-size: 3rem;
+}
+
+h2{
+    @extend %fuentePrincipal;
+    font-size: 7rem;
+    text-align: center;
+}
+
+ul li{
+    @extend %fuenteSecundaria;
+    font-size: 1.5rem;
+}
+
+.tipografiaformulario{
+    @extend %fuenteSecundaria;
+    font-size: 1.5rem;
+    color: nth($paletaColores, 1 );
+}
+
+
+/* nav*/
+
+ul{
+    list-style-type: none;
+}
+
+li a{
+    color: nth($paletaColores, 1 );
+    text-decoration: none;
+}
+h1 a{
+    text-decoration: none;
+    color: nth($paletaColores, 1 );
+}
+
+.colorToggler{
+    background-color: #eaeaea8e!important;
+}
+
+.navBootstrap{   
+    height: 8.8rem;
+    background-color: rgba(0, 0, 0, 0.204);
+}
+
+.marginEspecial{    
+    margin-left: 10rem!important;
+}
+
+.marginLi{
+    margin-left: 9rem;
+}
+
+nav{
+    z-index: 2;
+}
+
+h2{
+    position: relative;
+    z-index: 2;
+}
+
+.positionabsolut{
+    position: absolute;
+    top: 0px;
+}
+
+/* cover nav */
+
+.tamañoCover{
+    width: 100%;
+    height: 80vh;    
+}
+
+.marginCover{
+    margin: $marginCover;
+}
+
+.imgEventos{
+    background-image: url("../assets/cover_03.jpg");
+}
+
+.posicionBack{
+    background-size: cover;
+    background-position: top center;
+}
+
+.imgBio{
+    background-image: url("../assets/cover_02.jpg");  
+}
+
+.imgContacto{
+    background-image: url("../assets/cover_05.jpg");
+}
+
+.imgGaleria{
+    background-image: url("../assets/cover_04.jpg");
+}
+
+
+
+/*body*/
+
+body{
+    background-color: nth($paletaColores, 3 );
+
+}
+
+/*footer*/
+
+ion-icon{
+    color: nth($paletaColores, 1 );
+    text-align: center;
+    font-size: 2.4rem;
+    margin: 3rem 2rem 3rem 2rem;
+}
+
+.flexFooter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+/* hover */ 
+
+header{
+    nav{
+        ul{
+            li :hover{
+                color: nth($paletaColores, 4 );
+                text-decoration: underline; 
+                font-weight: bold;               
+
+            }
+        }
+    }
+}
+
+// .claseHover :hover{
+//     color: nth($paletaColores, 2 );
+//     text-decoration: underline;
+// }
+
+
+
+
+/*botones*/
+
+.button{
+    color: nth($paletaColores, 1 );
+    background-color: nth($paletaColores, 2 );
+    border-radius: 1rem;
+    width: 20vw;
+    padding: 1rem 8rem 1rem 8rem;
+    
+}
+
+.buttonCardTwo{
+    width: 25rem;
+    height: 5rem;
+    padding: 1rem;
+    background-color:nth($paletaColores, 2 );
+    color:nth($paletaColores, 1 );
+    border-color:nth($paletaColores, 2 );   
+    border-radius: 1rem;
+    
+    text-align: center;
+
+}
+

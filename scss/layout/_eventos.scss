@@ -1,0 +1,88 @@
+@mixin anchoAlto($ancho,$alto){
+    width: $ancho;
+    height: $alto;
+}
+@mixin flexOne($displai,$direction,$justify,$align){
+    display: $displai;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+/* main */
+
+.tamañoCard{
+    @include anchoAlto(113rem, 98rem);
+    border-radius: 2rem;
+    border: 1.5px solid #EAEAEA;   
+}
+
+.flexCards{
+    @include flexOne(flex,column , flex-start, center);
+   
+}
+
+.cajaCard{
+    @include anchoAlto(94.4rem, 38rem);    
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.flexCard{
+    @include flexOne(flex, column, space-evenly, flex-start);  
+}
+
+.bordeImagenesCards{
+    border-radius: 2.2rem;
+}
+.alineacionText{
+    text-align: center;
+}
+
+.gridEventos{
+    display: grid;
+    grid-template-columns: 2fr 10fr 2fr;
+    grid-template-rows: 70rem 968px 122px 968px 122px 600px 0px;
+    grid-template-areas: 
+    ". . ."
+    ". cardUno ."
+    ". . ."
+    ". cardDos ."
+    ". . ."
+    ". cardTres ."
+    ". . ."   
+    ;  
+
+}
+.cardUno{
+    grid-area: cardUno;
+}
+.cardDos{
+    grid-area: cardDos;
+}
+.cardTres{
+    grid-area: cardTres;
+}
+.textoFinal{
+    grid-area: textoFinal;
+}
+.gridInfoEventos{
+    display: grid;
+    grid-template-columns: 2fr 9fr 2fr;
+    grid-template-rows: 80vh 10vh 5vh 30vh 10vh;
+    grid-template-areas: 
+    ". . ."
+    ". titulo ."
+    ". . ."
+    ". textito ."
+    ". . ."
+
+    ;
+}
+.titulo{
+    grid-area: titulo;
+}
+.textito{
+    grid-area: textito;
+}
+

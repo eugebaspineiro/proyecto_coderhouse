@@ -1,0 +1,31 @@
+@mixin anchoAlto($ancho,$alto){
+    width: $ancho;
+    height: $alto;
+}
+
+@mixin flexOne($displai,$direction,$justify,$align){
+    display: $displai;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+/* main */
+
+.marginMain{
+    margin-top: 90vh;
+}
+
+.seccionGaleria{
+    @include flexOne(flex, row, center, center);
+    margin-bottom: 30vh;
+}
+
+.imgCarruselGaleria{
+    @include anchoAlto(90rem, 60rem);
+}
+
+.cajaTitulos{
+    margin-left: 3rem;
+    margin-right: 5rem;
+}

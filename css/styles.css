@@ -1,618 +1,705 @@
-*{
-    margin: 0;
-    padding: 0;
+@charset "UTF-8";
+html {
+  font-size: 62.5%;
 }
 
-body{
-    background-color: #1D1D1D;
+h2, h1, .tipografiaEspecial {
+  font-family: "Teko", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  color: #EAEAEA;
 }
 
-html{
-    font-size: 62.5%;
+.tipografiaformulario, ul li, .tipografiaSecundaria, h3, p {
+  font-family: "Urbanist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  color: #EAEAEA;
 }
 
-/* Tipografias y estilos */
+/*tipografias*/
+.tipografiaEspecial {
+  font-size: 4rem;
+  color: #EAEAEA;
+}
 
-h1,h2{
-    font-family: "Teko", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal; 
-    color: #EAEAEA;
+h3, p {
+  font-size: 2rem;
+  color: #EAEAEA;
 }
-h1 strong{
-    
-    color: #EE008F;
+
+.tipografiaSecundaria {
+  font-size: 2rem;
 }
-h1{
+
+h1 {
+  font-size: 3rem;
+}
+
+h1 strong {
+  color: #EE008F;
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 7rem;
+  text-align: center;
+}
+
+ul li {
+  font-size: 1.5rem;
+}
+
+.tipografiaformulario {
+  font-size: 1.5rem;
+  color: #EAEAEA;
+}
+
+/* nav*/
+ul {
+  list-style-type: none;
+}
+
+li a {
+  color: #EAEAEA;
+  text-decoration: none;
+}
+
+h1 a {
+  text-decoration: none;
+  color: #EAEAEA;
+}
+
+.colorToggler {
+  background-color: rgba(234, 234, 234, 0.5568627451) !important;
+}
+
+.navBootstrap {
+  height: 8.8rem;
+  background-color: rgba(0, 0, 0, 0.204);
+}
+
+.marginEspecial {
+  margin-left: 10rem !important;
+}
+
+.marginLi {
+  margin-left: 9rem;
+}
+
+nav {
+  z-index: 2;
+}
+
+h2 {
+  position: relative;
+  z-index: 2;
+}
+
+.positionabsolut {
+  position: absolute;
+  top: 0px;
+}
+
+/* cover nav */
+.tamañoCover {
+  width: 100%;
+  height: 80vh;
+}
+
+.marginCover {
+  margin: 35rem 10rem 0rem 10rem;
+}
+
+.imgEventos {
+  background-image: url("../assets/cover_03.jpg");
+}
+
+.posicionBack {
+  background-size: cover;
+  background-position: top center;
+}
+
+.imgBio {
+  background-image: url("../assets/cover_02.jpg");
+}
+
+.imgContacto {
+  background-image: url("../assets/cover_05.jpg");
+}
+
+.imgGaleria {
+  background-image: url("../assets/cover_04.jpg");
+}
+
+/*body*/
+body {
+  background-color: #1D1D1D;
+}
+
+/*footer*/
+ion-icon {
+  color: #EAEAEA;
+  text-align: center;
+  font-size: 2.4rem;
+  margin: 3rem 2rem 3rem 2rem;
+}
+
+.flexFooter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+/* hover */
+header nav ul li :hover {
+  color: #D72ADA;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/*botones*/
+.button {
+  color: #EAEAEA;
+  background-color: #EE008F;
+  border-radius: 1rem;
+  width: 20vw;
+  padding: 1rem 8rem 1rem 8rem;
+}
+
+.buttonCardTwo {
+  width: 25rem;
+  height: 5rem;
+  padding: 1rem;
+  background-color: #EE008F;
+  color: #EAEAEA;
+  border-color: #EE008F;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+/* cover nav home */
+.tamañoSubNav {
+  width: 100%;
+  height: 120vh;
+}
+
+.backImg {
+  background-image: url("../assets/cover_principal.png");
+  background-size: cover;
+  background-position: top center;
+}
+
+.espacioLetras {
+  letter-spacing: 0.3rem;
+}
+
+.marginTitular {
+  margin-top: 65rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
+/*main*/
+.tamañoSeccionNS {
+  margin-top: 140vh;
+  height: 90vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.sectionNuestroShow {
+  width: 50vw;
+  height: 90 vh;
+  margin-left: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.flexCarrusel {
+  display: flex;
+  flex-direction: colum;
+  justify-content: flex-end;
+  align-items: end;
+}
+
+.tamañoParrafo {
+  width: 40vw;
+  height: 50rem;
+}
+
+.bordeImagenes {
+  border-radius: 1.2rem;
+}
+
+.tamañoCarrusel {
+  width: 50vw;
+  height: 90vh;
+  margin-right: 10rem;
+}
+
+.seccionEspecial {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 80vh;
+  margin-top: 15vh;
+  margin-bottom: 15vh;
+}
+
+.textoSE {
+  text-align: center;
+  margin: 5rem 10rem 5rem 10rem;
+}
+
+/* main */
+.gridBio {
+  display: grid;
+  grid-template-columns: 1fr 4fr 4fr 1fr;
+  grid-template-rows: 5fr 5fr 1fr 5fr 1fr 5fr 2fr;
+  grid-template-areas: ". . . ." ". imgVozPrincipal textVozPrincipal ." ". . . ." ". textBaterista imgBaterista ." ". . . ." ". imgBajista textBajista .";
+}
+
+.imgBaterista {
+  grid-area: imgBaterista;
+}
+
+.textBaterista {
+  grid-area: textBaterista;
+}
+
+.imgBajista {
+  grid-area: imgBajista;
+}
+
+.textBajista {
+  grid-area: textBajista;
+}
+
+.textVozPrincipal {
+  grid-area: textVozPrincipal;
+}
+
+.imgVozPrincipal {
+  grid-area: imgVozPrincipal;
+}
+
+.textoGrid {
+  align-self: center;
+}
+
+.imgGrid {
+  justify-self: end;
+}
+
+/* main */
+.tamañoCard {
+  width: 113rem;
+  height: 98rem;
+  border-radius: 2rem;
+  border: 1.5px solid #EAEAEA;
+}
+
+.flexCards {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.cajaCard {
+  width: 94.4rem;
+  height: 38rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.flexCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.bordeImagenesCards {
+  border-radius: 2.2rem;
+}
+
+.alineacionText {
+  text-align: center;
+}
+
+.gridEventos {
+  display: grid;
+  grid-template-columns: 2fr 10fr 2fr;
+  grid-template-rows: 70rem 968px 122px 968px 122px 600px 0px;
+  grid-template-areas: ". . ." ". cardUno ." ". . ." ". cardDos ." ". . ." ". cardTres ." ". . .";
+}
+
+.cardUno {
+  grid-area: cardUno;
+}
+
+.cardDos {
+  grid-area: cardDos;
+}
+
+.cardTres {
+  grid-area: cardTres;
+}
+
+.textoFinal {
+  grid-area: textoFinal;
+}
+
+.gridInfoEventos {
+  display: grid;
+  grid-template-columns: 2fr 9fr 2fr;
+  grid-template-rows: 80vh 10vh 5vh 30vh 10vh;
+  grid-template-areas: ". . ." ". titulo ." ". . ." ". textito ." ". . .";
+}
+
+.titulo {
+  grid-area: titulo;
+}
+
+.textito {
+  grid-area: textito;
+}
+
+/* main */
+.marginMain {
+  margin-top: 90vh;
+}
+
+.seccionGaleria {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30vh;
+}
+
+.imgCarruselGaleria {
+  width: 90rem;
+  height: 60rem;
+}
+
+.cajaTitulos {
+  margin-left: 3rem;
+  margin-right: 5rem;
+}
+
+/* main */
+.gridInfo {
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr;
+  grid-template-rows: 90vh 1fr 1fr 4fr 3fr;
+  grid-template-areas: ". . ." ". titulo ." ". . ." ". textito ." ". . .";
+}
+
+.titulo {
+  grid-area: titulo;
+}
+
+.textito {
+  grid-area: textito;
+}
+
+.gridFormulario {
+  display: grid;
+  grid-template-columns: 2fr 5fr 5fr 2fr;
+  grid-template-rows: 2fr 7fr 3fr 7fr;
+  grid-template-areas: ". gridNombre gridEmail ." ". gridMensaje gridMensaje ." ". gridButton gridButton ." ". . . .";
+}
+
+.gridNombre {
+  grid-area: gridNombre;
+}
+
+.gridEmail {
+  grid-area: gridEmail;
+  justify-self: end;
+}
+
+.gridMensaje {
+  grid-area: gridMensaje;
+  align-self: end;
+}
+
+.gridButton {
+  grid-area: gridButton;
+  align-self: end;
+}
+
+.alineacionTextoContacto {
+  text-align: center;
+}
+
+.nombre {
+  border-radius: 1rem;
+  background-color: rgba(29, 29, 29, 0.5411764706);
+  border-color: #111111;
+  width: 46rem;
+  height: 5rem;
+}
+
+.mensaje {
+  border-radius: 1rem;
+  background-color: rgba(29, 29, 29, 0.5411764706);
+  border-color: #111111;
+  width: 109rem;
+  height: 12rem;
+}
+
+.buttonForm {
+  color: #EAEAEA;
+  background-color: #EE008F;
+  border-radius: 1rem;
+  width: 109rem;
+  height: 5rem;
+}
+
+/* media queris generales */
+@media (max-width: 412px) {
+  .marginEspecial {
+    margin-left: 2rem !important;
+  }
+  .marginLi {
+    margin-left: 2rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h1 strong {
+    font-size: 2rem;
+  }
+  h2 {
     font-size: 3rem;
-    
-}
-h2{    
-    font-size: 7rem;
-    text-align: center;
-}
-h3,p,ul li{
-    font-family: "Urbanist", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-    color: #EAEAEA;
-}
-h3, p{
+  }
+  h3, p {
+    font-size: 1rem;
+  }
+  ul li {
+    font-size: 1rem;
+  }
+  .tipografiaEspecial {
     font-size: 2rem;
-}
-ul li{
-    font-size: 1.5rem;
-}
-
-.colorprimario{
-    color: #EAEAEA;
-}
-.colorsecundario{
-    color: #EE008F;
-}
-.colorToggler{
-    background-color: #eaeaea8e!important;
-  
-   
-}
-
-.tipografiaEspecial{
-    font-family: "Teko", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
-    font-size: 4rem;   
-}
-
-.tipografiaSecundaria{
-    font-family: "Urbanist", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
+  }
+  .navBootstrap {
+    height: 4rem;
+  }
+  ion-icon {
     font-size: 2rem;
-   
-}
-
-.tipografiaformulario{
-    font-family: "Urbanist", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
-    padding-left: 10px;
-    font-size: 1.5rem;
-    
-}
-ul{
-    list-style-type: none;
-}
-.alineacionTextoContacto{
-    text-align: center;
-}
-
-li a{
-    color: #EAEAEA;
-    text-decoration: none;
-}
-h1 a{
-    text-decoration: none;
-    color: #EAEAEA;
-}
-ion-icon{
-    color: #EAEAEA;
-    text-align: center;
-    font-size: 2.4rem;
-    margin: 3rem 2rem 3rem 2rem;
-}
-
-
-/* Tamaños de cajas + Flex */
-
-.nombre{
-    border-radius: 1rem;
-    background-color: #1d1d1d8a;
-    border-color: #111111;
-    width: 46.8rem;
-    height: 4.8rem;    
-}
-
-.mensaje{
-    border-radius: 1rem;
-    background-color: #1d1d1d8a;
-    border-color: #111111;
-    width: 107.5rem;
-    height: 12.4rem;    
-}
-
-.buttonForm{
-    color: #EAEAEA;
-    background-color: #EE008F;    
-    border-radius: 1rem;
-    width: 109rem;
-    height: 4.8rem;
-
-}
-
-.button{
-    padding: 1rem 8rem 1rem 8rem;
-    color: #EAEAEA;
-    background-color: #EE008F;    
+    margin: 0rem 1rem 0rem 1rem;
+  }
+  .tamañoLinea {
+    width: 80vw;
+  }
+  .button {
+    padding: 1rem 2rem 1rem 2rem;
     border-radius: 1rem;
     width: 20vw;
-    
+    height: 4rem;
+  }
+  .tipografiaSecundaria {
+    font-size: 1rem;
+  }
+  .footerQueris {
+    width: 100%;
+    height: 10vh;
+  }
+  .tamañoCover {
+    width: 100%;
+    height: 30vh;
+  }
+  .marginCover {
+    margin: 15rem 2rem 0rem 2rem;
+  }
 }
-
-.buttonCard{
-    width: 10rem;
-    height: 5rem;
-    padding: 1rem;
-    background-color: #1d1d1d00;
-    color: #EAEAEA;
-    border-color: #EAEAEA;
-    border-radius: 1rem;
-    margin-bottom: 4rem;
-}
-
-.buttonCardTwo{
-    width: 30rem;
-    height: 5rem;
-    padding: 1rem;
-    background-color: #EE008F;
-    color: #EAEAEA;
-    border-color: #EE008F;   
-    border-radius: 1rem;
-    margin-bottom: 4rem;
-
-}
-
-.positionabsolut{
-    position: absolute;
-    top: 0px;
-}
-
-header{
-    position: relative;
-}
-.navBootstrap{
-    width: 99vw;
-    height: 8.8rem;
-    background-color: rgba(0, 0, 0, 0.204);
-
-}
-.marginEspecial{
-    
-    margin-left: 18rem!important;
-}
-.marginLi{
-    margin-left: 6rem;
-}
-
-h1{
-    margin-left: 15.6rem;
-    position: relative;
-    z-index: 2;   
-}
-h2{
-    position: relative;
-    z-index: 2;
-}
-li{
-    margin: 0.5rem;
-}
-nav{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: end;
-    margin-right: 14.6rem;
-    position: relative;
-    z-index: 2;
-}
-.flexNav{
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-}
-.tamañoDiv{
-    width: 98vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-end;
-}
-.margenes146{
-    margin-left: 13.6rem;
-    margin-right: 13.6rem;
-}
-.flexCard{
-    display: flex;
-    flex-direction: row;
-}
-
-.divNuestroShow{
-    width: 48.1rem;
-    height: 70rem;
-    border-radius: 1.5rem;  
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;   
-}
-.imgCardUno{
-    background-image: url("../assets/card_01.jpg");
-    background-position: center bottom;
-}
-.imgCardDos{
-    background-image: url("../assets/card_02.jpg");
-    background-position: center bottom;
-}
-.imgCardTres{
-    background-image: url("../assets/card_03.jpg");
-    background-position: center bottom;
-}
-
-.tamañoSeccionNS{
-    width: 98vw;
-    height: 70vw;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
-}
-.tamañoParrafo{
-    width: 38.6rem;
-    height: 43.6rem;
-}
-
-.sectionNuestroShow{
-    width: 48.1rem;
-    height: 70rem;
-    margin: 15.6rem;
-    padding: 5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;     
-}
-
-.seccionEspecial{
-    width: 98vw;
-    height: 30vw;   
-    margin-bottom: 10vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-
-}
-
-.cajaTexto{
-    width: 81.5rem;
-    height: 72.8rem;
-    padding: 9.2rem 13.4rem 9.2rem 7.7rem;
-}
-
-.bordeCard{
-    border-radius: 2rem;
-    border: 1.5px solid #EAEAEA;
-}
-
-.flexCard{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-.cajaCard{
-    width: 94.4rem;
-    height: 38rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
-.flexCards{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.flexFooter{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-.divBaterista{
-    width: 80rem;
-    height: 72.8rem;
-    padding: 9.6rem 7.1rem 9.6rem 15.6rem;
-}
-.divImagenBaterista{
-    width: 63.6rem;
-    height: 72.8rem;
-    padding-right: 15.1rem;
-}
-.tamañoCard{
-    width: 112.8rem;
-    height: 96.8rem;
-}
-.bordeImagenes{
-    border-radius: 1.2rem;
-}
-.bordeImagenesCards{
-    border-radius: 2.2rem;
-}
-.imagenSecciones{
-    width: 98.8vw;
-    
-}
-.tamañoseccion{
-    width: 98,9vw;
-    height: 30vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-.seccionGaleria{
-       
-    margin-left: 13.6rem;
-    margin-top: 7rem;
-    margin-bottom: 20rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.imgGaleria{
-    width: 90rem;
-    height: 60rem;
-}
-
-.cajaTitulos{
-    margin-right: 5rem;
-}
-/* Grids */
-
-.gridBio{
-    display: grid;
-    grid-template-columns: 1fr 4fr 4fr 1fr;
-    grid-template-rows: 1fr 5fr 1fr 5fr 1fr 5fr 1fr;
-    grid-template-areas: 
-    ". . . ."
-    ". imgVozPrincipal textVozPrincipal ."
-    ". . . ."
-    ". textBaterista imgBaterista ."
-    ". . . ."
-    ". imgBajista textBajista ."
-
-    ;
-}
-
-.imgBaterista{
-    grid-area: imgBaterista;
-}
-.textBaterista{
-    grid-area: textBaterista;
-}
-.imgBajista{
-    grid-area: imgBajista;
-}
-.textBajista{
-    grid-area: textBajista;
-}
-.textVozPrincipal{
-    grid-area: textVozPrincipal;    
-}
-.imgVozPrincipal{ 
-    grid-area: imgVozPrincipal;    
-}
-.textoGrid{
-    align-self: center;
-}
-.imgGrid{
-    justify-self: end;
-}
-
-.gridEventos{
-    display: grid;
-    grid-template-columns: 2fr 10fr 2fr;
-    grid-template-rows: 122px 968px 122px 968px 122px 968px 122px;
-    grid-template-areas: 
-    ". . ."
-    ". cardUno ."
-    ". . ."
-    ". cardDos ."
-    ". . ."
-    ". cardTres ."
-    ". . ."   
-    ;  
-
-}
-.cardUno{
-    grid-area: cardUno;
-}
-.cardDos{
-    grid-area: cardDos;
-}
-.cardTres{
-    grid-area: cardTres;
-}
-.textoFinal{
-    grid-area: textoFinal;
-}
-.gridInfo{
-    display: grid;
-    grid-template-columns: 1fr 10fr 1fr;
-    grid-template-rows: 2fr 1fr 1fr 4fr 3fr;
-    grid-template-areas: 
-    ". . ."
-    ". titulo ."
-    ". . ."
-    ". textito ."
-    ". . ."
-
-    ;
-}
-.titulo{
-    grid-area: titulo;
-}
-.textito{
-    grid-area: textito;
-}
-.gridFormulario{
-    display: grid;
-    grid-template-columns: 2fr 5fr 5fr 2fr;
-    grid-template-rows: 2fr 7fr 3fr 7fr;
-    grid-template-areas: 
-    ". gridNombre gridEmail ."
-    ". gridMensaje gridMensaje ."
-    ". gridButton gridButton ."
-    ". . . ."
-    ;
-}
-.gridNombre{
-    grid-area: gridNombre;
-}
-.gridEmail{
-    grid-area: gridEmail;
-    
-    justify-self: end;
-}
-.gridMensaje{
-    grid-area: gridMensaje;
-    align-self: end;
-}
-.gridButton{
-    grid-area: gridButton;
-    align-self: end;
-}
-
 /* media queris index */
-
-@media (max-width: 768px) {
-    h1{
-        font-size: 2rem;
-    }
-    h2{
-        font-size: 3rem;
-    }
-    h3, p{
-        font-size: 1rem;
-    }
-    ul li{
-        font-size: 1rem;
-    }
-    .tipografiaEspecial{
-        font-size: 2rem;
-    }
-    .margenes146{
-        margin-left: 2rem;
-        margin-right: 2rem;
-    }
-    .marginEspecial{
-        margin-left: 2rem!important;
-    }
-    .tamañoDiv{
-        height: 18vh;
-        margin-bottom: 15rem;
-        margin-top: 20rem;
-        width: 95vw;
-    }
-   
-    .imagenSecciones{
-        width: 100vw;
-        
-    }
-    .tamañoSeccionNS{
-        flex-direction: column;
-        margin-left: 1rem;
-        margin-right: 1rem;
-        width: 95vw;
-        height: 70rem;
-        
-    }
-    .imgQueris{
-        width: 30rem;
-        height: 40rem;
-        margin-bottom: 3rem;
-    }
-    .sectionNuestroShow{
-        width: 95vw;
-        height: 2rem;
-        margin: 3rem;
-        justify-content: flex-end;
-    }
-    .seccionEspecial{
-        width: 95vw;
-        height: 5rem;
-        margin-top: 1rem;
-        margin-bottom: 3rem; 
-        margin-left: 2rem; 
-        margin-right: 2rem;      
-        justify-content: flex-end;
-    }
-    .tamañoParrafo{
-        width: 80vw;
-        height: 4rem;
-    }
-    .flexNav{
-        flex-direction: column;
-        align-items: center;
-    }
-    .tamañoLinea{
-        width: 80vw;
-    }
-    .button{
-        padding: 1rem 2rem 1rem 2rem;          
-        border-radius: 1rem;
-        width: 20vw;
-        height: 4rem;
-        
-    }
-    .tipografiaSecundaria{
-        font-size: 1rem;
-    }
-    ion-icon{
-     
-        font-size: 2rem;
-        margin: 2rem 1rem 2rem 1rem;
-    }
-   
+@media (max-width: 412px) {
+  .tamañoSubNav {
+    width: 100%;
+    height: 32vh;
+  }
+  .espacioLetras {
+    letter-spacing: 0.1rem;
+  }
+  .marginTitular {
+    margin-top: 19rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .tamañoSeccionNS {
+    margin-top: 40vh;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .sectionNuestroShow {
+    width: 100%;
+    height: 70vh;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .flexCarrusel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .tamañoParrafo {
+    width: 80vw;
+    height: 3rem;
+  }
+  .bordeImagenes {
+    border-radius: 0.8rem;
+  }
+  .tamañoCarrusel {
+    width: 70vw;
+    height: 50vh;
+    margin-top: 10rem;
+    margin-right: 2rem;
+  }
+  .imgQueris {
+    width: 70vw;
+    height: 50vh;
+    margin-left: 1.2rem;
+  }
+  .alineacionQueris {
+    text-align: center;
+  }
+  .seccionEspecial {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    height: 50vh;
+    margin: 5rem 2rem 1rem 2rem;
+  }
+  .textoSE {
+    text-align: center;
+    margin: 1rem 2rem 1rem 2rem;
+  }
 }
-
 /* media queris bio */
-
-@media (max-width: 768px) {
-    .navBootstrap{
-        width: 100vw;
-        height: 4rem;       
-    
-    }
-    .imagenSecciones{
-        width: 100vw;
-    }
-    .gridBio{
-        
-        grid-template-columns: 1fr 4fr 1fr;
-        grid-template-rows: 0fr 0.5fr 1fr 0fr 0.5fr 1fr 0fr 0.5fr 1fr 0.2fr;
-        grid-template-areas: 
-        ". . ."
-        ". textVozPrincipal ."
-        ". imgVozPrincipal ."
-        ". . ."
-        ". textBaterista ."
-        ".  imgBaterista ."
-        ". . ."
-        ". textBajista ."
-        ". imgBajista ."
-        ". . ."    
-        ;    
-    }
-    .tamañoseccion{
-        width: 100vw;
-        height: 30vh;
-    }
-
+@media (max-width: 412px) {
+  .gridBio {
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 0.65fr 0.8fr 1.2fr 0.2fr 0.8fr 1.2fr 0.2fr 0.8fr 1.2fr 0.2fr;
+    grid-template-areas: ". . ." ". textVozPrincipal ." ". imgVozPrincipal ." ". . ." ". textBaterista ." ".  imgBaterista ." ". . ." ". textBajista ." ". imgBajista ." ". . .";
+  }
+}
+/* media queris eventos */
+@media (max-width: 412px) {
+  .tamañoCard {
+    width: 90vw;
+    height: 52vh;
+    border-radius: 1rem;
+  }
+  .cajaCard {
+    width: 80vw;
+    height: 10vh;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .bordeImagenesCards {
+    border-radius: 1rem;
+  }
+  .gridEventos {
+    display: grid;
+    grid-template-columns: 2rem 90vw 2rem;
+    grid-template-rows: 30vh 60vh 1vh 60vh 1vh 60vh 1vh;
+    grid-template-areas: ". . ." ". cardUno ." ". . ." ". cardDos ." ". . ." ". cardTres ." ". . .";
+  }
+  .imgQuerisCard {
+    width: 89vw;
+    height: 25vh;
+  }
+  .buttonCardTwo {
+    width: 15rem;
+    height: 3rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+  }
+  .gridInfoEventos {
+    display: grid;
+    grid-template-columns: 2rem 90vw 2rem;
+    grid-template-rows: 1vh 2vh 2vh 15vh 5vh;
+    grid-template-areas: ". . ." ". titulo ." ". . ." ". textito ." ". . .";
+  }
+}
+/* media queris galeria */
+@media (max-width: 412px) {
+  .marginMain {
+    margin-top: 30vh;
+  }
+  .seccionGaleria {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5vh;
+  }
+  .imgCarruselGaleria {
+    width: 80vw;
+    height: 30vh;
+  }
+  .cajaTitulos {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .querisAlign {
+    text-align: center;
+  }
+}
+/* media queris contacto*/
+@media (max-width: 412px) {
+  .gridInfo {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1rem 80vw 2rem;
+    grid-template-rows: 30vh 3vh 2vh 20vh 3vh;
+    grid-template-areas: ". . ." ". titulo ." ". . ." ". textito ." ". . .";
+  }
+  .gridFormulario {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 2rem 80vw 2rem;
+    grid-template-rows: 5vh 5vh 1vh 5vh 1vh 18vh 1vh 5vh 4vh;
+    grid-template-areas: ". . ." ". gridNombre ." ". . ." ". gridEmail ." ". . ." ". gridMensaje ." ". . ." ". gridButton ." ". . .";
+  }
+  .nombre {
+    width: 80vw;
+    height: 5vh;
+  }
+  .mensaje {
+    width: 80vw;
+    height: 15vh;
+  }
+  .buttonForm {
+    width: 80vw;
+    height: 5vh;
+  }
 }
 
+/*# sourceMappingURL=styles.css.map */
