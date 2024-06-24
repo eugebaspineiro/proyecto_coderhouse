@@ -73,7 +73,7 @@ h1 a {
 }
 
 .colorToggler {
-  background-color: rgba(234, 234, 234, 0.5568627451) !important;
+  background-color: rgba(234, 234, 234, 0.5568627451);
 }
 
 .navBootstrap {
@@ -82,7 +82,7 @@ h1 a {
 }
 
 .marginEspecial {
-  margin-left: 10rem !important;
+  margin-left: 10rem;
 }
 
 .marginLi {
@@ -472,7 +472,7 @@ header nav ul li :hover {
 /* media queris generales */
 @media (max-width: 412px) {
   .marginEspecial {
-    margin-left: 2rem !important;
+    margin-left: 2rem;
   }
   .marginLi {
     margin-left: 2rem;
