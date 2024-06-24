@@ -33,8 +33,9 @@
 .gridFormulario{
     display: grid;
     grid-template-columns: 2fr 5fr 5fr 2fr;
-    grid-template-rows: 2fr 7fr 3fr 7fr;
-    grid-template-areas: 
+    grid-template-rows: 2fr 3fr 2fr 3fr;
+    
+    grid-template-areas:     
     ". gridNombre gridEmail ."
     ". gridMensaje gridMensaje ."
     ". gridButton gridButton ."
@@ -43,11 +44,12 @@
 }
 .gridNombre{
     grid-area: gridNombre;
+    
 }
 .gridEmail{
-    grid-area: gridEmail;
+    grid-area: gridEmail; 
+    justify-self: end;   
     
-    justify-self: end;
 }
 .gridMensaje{
     grid-area: gridMensaje;
@@ -57,6 +59,7 @@
     grid-area: gridButton;
     align-self: end;
 }
+
 
 .alineacionTextoContacto{
     text-align: center;

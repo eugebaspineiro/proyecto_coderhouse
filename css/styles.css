@@ -418,7 +418,7 @@ header nav ul li :hover {
 .gridFormulario {
   display: grid;
   grid-template-columns: 2fr 5fr 5fr 2fr;
-  grid-template-rows: 2fr 7fr 3fr 7fr;
+  grid-template-rows: 2fr 3fr 2fr 3fr;
   grid-template-areas: ". gridNombre gridEmail ." ". gridMensaje gridMensaje ." ". gridButton gridButton ." ". . . .";
 }
 
