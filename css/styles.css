@@ -478,22 +478,22 @@ header nav ul li :hover {
     margin-left: 2rem;
   }
   h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
   h1 strong {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
   h2 {
     font-size: 3rem;
   }
   h3, p {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
   ul li {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
   .tipografiaEspecial {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
   .navBootstrap {
     height: 4rem;
@@ -508,11 +508,11 @@ header nav ul li :hover {
   .button {
     padding: 1rem 2rem 1rem 2rem;
     border-radius: 1rem;
-    width: 20vw;
-    height: 4rem;
+    width: 25vw;
+    height: 5rem;
   }
   .tipografiaSecundaria {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
   .footerQueris {
     width: 100%;
@@ -542,7 +542,7 @@ header nav ul li :hover {
   }
   .tamañoSeccionNS {
     margin-top: 40vh;
-    height: 60vh;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -568,7 +568,7 @@ header nav ul li :hover {
   }
   .tamañoParrafo {
     width: 80vw;
-    height: 3rem;
+    height: 10rem;
   }
   .bordeImagenes {
     border-radius: 0.8rem;
@@ -593,7 +593,7 @@ header nav ul li :hover {
     justify-content: center;
     align-items: center;
     width: 90vw;
-    height: 50vh;
+    height: 60vh;
     margin: 5rem 2rem 1rem 2rem;
   }
   .textoSE {
@@ -605,7 +605,7 @@ header nav ul li :hover {
 @media (max-width: 412px) {
   .gridBio {
     grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: 0.65fr 0.8fr 1.2fr 0.2fr 0.8fr 1.2fr 0.2fr 0.8fr 1.2fr 0.2fr;
+    grid-template-rows: 0.5fr 0.8fr 0.6fr 0.2fr 0.8fr 0.6fr 0.2fr 0.8fr 0.6fr 0.2fr;
     grid-template-areas: ". . ." ". textVozPrincipal ." ". imgVozPrincipal ." ". . ." ". textBaterista ." ".  imgBaterista ." ". . ." ". textBajista ." ". imgBajista ." ". . .";
   }
 }
@@ -613,7 +613,7 @@ header nav ul li :hover {
 @media (max-width: 412px) {
   .tamañoCard {
     width: 90vw;
-    height: 52vh;
+    height: 77vh;
     border-radius: 1rem;
   }
   .cajaCard {
@@ -628,7 +628,7 @@ header nav ul li :hover {
   .gridEventos {
     display: grid;
     grid-template-columns: 2rem 90vw 2rem;
-    grid-template-rows: 30vh 60vh 1vh 60vh 1vh 60vh 1vh;
+    grid-template-rows: 30vh 80vh 1vh 80vh 1vh 80vh 1vh;
     grid-template-areas: ". . ." ". cardUno ." ". . ." ". cardDos ." ". . ." ". cardTres ." ". . .";
   }
   .imgQuerisCard {
@@ -637,14 +637,14 @@ header nav ul li :hover {
   }
   .buttonCardTwo {
     width: 15rem;
-    height: 3rem;
+    height: 3.5rem;
     padding: 0.5rem;
     border-radius: 0.5rem;
   }
   .gridInfoEventos {
     display: grid;
     grid-template-columns: 2rem 90vw 2rem;
-    grid-template-rows: 1vh 2vh 2vh 15vh 5vh;
+    grid-template-rows: 1vh 2vh 2vh 20vh 5vh;
     grid-template-areas: ". . ." ". titulo ." ". . ." ". textito ." ". . .";
   }
 }
@@ -678,7 +678,7 @@ header nav ul li :hover {
     display: grid;
     justify-content: center;
     grid-template-columns: 1rem 80vw 2rem;
-    grid-template-rows: 30vh 3vh 2vh 20vh 3vh;
+    grid-template-rows: 30vh 3vh 2vh 30vh 3vh;
     grid-template-areas: ". . ." ". titulo ." ". . ." ". textito ." ". . .";
   }
   .gridFormulario {
